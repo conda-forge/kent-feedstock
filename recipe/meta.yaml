@@ -15,7 +15,8 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - kent-server=kent.cli:main
+    - kent-server=kent.cli_server:main
+    - kent-testpost=kent.cli_testpost:main
 
 requirements:
   host:
@@ -33,6 +34,7 @@ test:
   commands:
     - pip check
     - kent-server --help
+    - kent-testpost --help
     - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
