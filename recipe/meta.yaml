@@ -39,7 +39,7 @@ test:
   requires:
     - pip
     - pytest
-    - sentry_sdk
+    - sentry-sdk
 
 about:
   home: https://github.com/willkg/kent
