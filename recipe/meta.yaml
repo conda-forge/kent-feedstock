@@ -1,5 +1,5 @@
 {% set name = "kent" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kent-{{ version }}.tar.gz
-  sha256: c05b25b3d0e37a00ad8332e98bc922252d81cad9a581dd10daf80865ebc151c0
+  sha256: 01f0b964952ca892df2d0b2d7eda02350774b019d70777b53d97dd67fd92fa23
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - flask <3
+    - flask >=2.1.0,<3
     - python >=3.7
 
 test:
