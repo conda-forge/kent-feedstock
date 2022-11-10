@@ -1,5 +1,5 @@
 {% set name = "kent" %}
-{% set version = "0.5.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kent-{{ version }}.tar.gz
-  sha256: 8a89c6fb1f4339bb5622cd26cf6411bfda636dc38798c8de6437ec1544dc173f
+  sha256: cc18507f816bbe10d86ea5e8cf1a001a44ceb4813b2c51ca15334780d07b4cd3
 
 build:
   number: 0
