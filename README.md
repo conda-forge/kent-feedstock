@@ -1,11 +1,11 @@
-About kent
-==========
+About kent-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kent-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/willkg/kent
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kent-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fake Sentry service for debugging and integration tests
 
