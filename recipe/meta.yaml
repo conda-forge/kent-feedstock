@@ -1,5 +1,5 @@
 {% set name = "kent" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kent-{{ version }}.tar.gz
-  sha256: cc18507f816bbe10d86ea5e8cf1a001a44ceb4813b2c51ca15334780d07b4cd3
+  sha256: 7555c28337d0b17d63b0285d0636889bb1e04157bec8d4190f74323b32cae88d
 
 build:
   number: 0
@@ -39,6 +39,7 @@ test:
   requires:
     - pip
     - pytest
+    - requests
     - sentry-sdk
 
 about:
