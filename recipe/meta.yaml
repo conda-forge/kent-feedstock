@@ -39,6 +39,7 @@ test:
   requires:
     - pip
     - pytest
+    - requests
     - sentry-sdk
 
 about:
