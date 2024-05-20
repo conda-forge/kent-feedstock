@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - flask >=2.1.0,<3
-    - python >=3.7
+    - flask >3
+    - python >=3.8
 
 test:
   source_files:
