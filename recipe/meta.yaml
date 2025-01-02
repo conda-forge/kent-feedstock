@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kent-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kent-{{ version }}.tar.gz
   sha256: 8b873ed98b8740aa6c21c5bbd83ad64d362bd3614b48bdb13d33d99bd00f4a82
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
     - flask >3
-    - python >=3.9
+    - python >={{ python_min }}
     - requests
 
 test:
@@ -43,6 +43,7 @@ test:
     - pytest
     - requests
     - sentry-sdk
+    - python {{ python_min }}
 
 about:
   home: https://github.com/willkg/kent
